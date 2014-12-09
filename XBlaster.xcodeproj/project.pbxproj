@@ -40,6 +40,8 @@
 		C275DA2B1A372584000E2600 /* XBlasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XBlasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C275DA301A372584000E2600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C275DA311A372584000E2600 /* XBlasterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XBlasterTests.swift; sourceTree = "<group>"; };
+		C2E70E751A372C9700F17234 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C2E70E781A37320800F17234 /* edunline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = edunline.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		C275DA091A372584000E2600 = {
 			isa = PBXGroup;
 			children = (
+				C2E70E751A372C9700F17234 /* README.md */,
 				C275DA141A372584000E2600 /* XBlaster */,
 				C275DA2E1A372584000E2600 /* XBlasterTests */,
 				C275DA131A372584000E2600 /* Products */,
@@ -81,6 +84,7 @@
 		C275DA141A372584000E2600 /* XBlaster */ = {
 			isa = PBXGroup;
 			children = (
+				C2E70E771A3731E400F17234 /* Fonts */,
 				C275DA171A372584000E2600 /* AppDelegate.swift */,
 				C275DA191A372584000E2600 /* GameScene.sks */,
 				C275DA1B1A372584000E2600 /* GameScene.swift */,
@@ -116,6 +120,15 @@
 				C275DA301A372584000E2600 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2E70E771A3731E400F17234 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C2E70E781A37320800F17234 /* edunline.ttf */,
+			);
+			name = Fonts;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +428,7 @@
 				C275DA371A372584000E2600 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C275DA381A372584000E2600 /* Build configuration list for PBXNativeTarget "XBlasterTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +437,7 @@
 				C275DA3A1A372584000E2600 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
