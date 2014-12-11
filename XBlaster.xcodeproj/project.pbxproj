@@ -14,6 +14,7 @@
 		C275DA231A372584000E2600 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C275DA221A372584000E2600 /* Images.xcassets */; };
 		C275DA261A372584000E2600 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275DA241A372584000E2600 /* LaunchScreen.xib */; };
 		C275DA321A372584000E2600 /* XBlasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C275DA311A372584000E2600 /* XBlasterTests.swift */; };
+		C2CDB4F21A38AB0500107AD7 /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CDB4F11A38AB0500107AD7 /* Bullet.swift */; };
 		C2E70E7B1A3735D500F17234 /* edunline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2E70E7A1A3735D500F17234 /* edunline.ttf */; };
 		C2E70E891A3746A100F17234 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E70E7D1A3746A100F17234 /* CGFloat+Extensions.swift */; };
 		C2E70E8A1A3746A100F17234 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E70E7E1A3746A100F17234 /* CGPoint+Extensions.swift */; };
@@ -27,6 +28,8 @@
 		C2E70E921A3746A100F17234 /* SKTEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E70E861A3746A100F17234 /* SKTEffects.swift */; };
 		C2E70E931A3746A100F17234 /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E70E871A3746A100F17234 /* SKTTimingFunctions.swift */; };
 		C2E70E941A3746A100F17234 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E70E881A3746A100F17234 /* Vector3.swift */; };
+		C2E70E971A37EDD800F17234 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E70E961A37EDD800F17234 /* Entity.swift */; };
+		C2E70E991A37F1A800F17234 /* PlayerShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E70E981A37F1A800F17234 /* PlayerShip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,7 @@
 		C275DA2B1A372584000E2600 /* XBlasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XBlasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C275DA301A372584000E2600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C275DA311A372584000E2600 /* XBlasterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XBlasterTests.swift; sourceTree = "<group>"; };
+		C2CDB4F11A38AB0500107AD7 /* Bullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
 		C2E70E751A372C9700F17234 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C2E70E7A1A3735D500F17234 /* edunline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = edunline.ttf; sourceTree = "<group>"; };
 		C2E70E7D1A3746A100F17234 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 		C2E70E861A3746A100F17234 /* SKTEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTEffects.swift; sourceTree = "<group>"; };
 		C2E70E871A3746A100F17234 /* SKTTimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTTimingFunctions.swift; sourceTree = "<group>"; };
 		C2E70E881A3746A100F17234 /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		C2E70E961A37EDD800F17234 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		C2E70E981A37F1A800F17234 /* PlayerShip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerShip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,7 @@
 		C275DA141A372584000E2600 /* XBlaster */ = {
 			isa = PBXGroup;
 			children = (
+				C2E70E951A37EDAA00F17234 /* Entities */,
 				C2E70E771A3731E400F17234 /* Fonts */,
 				C275DA171A372584000E2600 /* AppDelegate.swift */,
 				C275DA1B1A372584000E2600 /* GameScene.swift */,
@@ -171,6 +178,16 @@
 				C2E70E881A3746A100F17234 /* Vector3.swift */,
 			);
 			path = SKTUtils;
+			sourceTree = "<group>";
+		};
+		C2E70E951A37EDAA00F17234 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C2E70E961A37EDD800F17234 /* Entity.swift */,
+				C2CDB4F11A38AB0500107AD7 /* Bullet.swift */,
+				C2E70E981A37F1A800F17234 /* PlayerShip.swift */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +293,10 @@
 			files = (
 				C275DA1C1A372584000E2600 /* GameScene.swift in Sources */,
 				C2E70E8A1A3746A100F17234 /* CGPoint+Extensions.swift in Sources */,
+				C2E70E991A37F1A800F17234 /* PlayerShip.swift in Sources */,
 				C2E70E931A3746A100F17234 /* SKTTimingFunctions.swift in Sources */,
 				C2E70E921A3746A100F17234 /* SKTEffects.swift in Sources */,
+				C2E70E971A37EDD800F17234 /* Entity.swift in Sources */,
 				C2E70E8E1A3746A100F17234 /* SKAction+SpecialEffects.swift in Sources */,
 				C2E70E8B1A3746A100F17234 /* CGVector+Extensions.swift in Sources */,
 				C2E70E8D1A3746A100F17234 /* SKAction+Extensions.swift in Sources */,
@@ -289,6 +308,7 @@
 				C2E70E891A3746A100F17234 /* CGFloat+Extensions.swift in Sources */,
 				C2E70E941A3746A100F17234 /* Vector3.swift in Sources */,
 				C275DA181A372584000E2600 /* AppDelegate.swift in Sources */,
+				C2CDB4F21A38AB0500107AD7 /* Bullet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -401,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
